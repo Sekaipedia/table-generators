@@ -1,6 +1,6 @@
 # Table Generators
 
-Various table generators Sekaipedia. Currently supported tables are:
+Various table generators for Sekaipedia. Currently supported tables are:
 
 - Card levels
 - Character Missions

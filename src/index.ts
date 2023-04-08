@@ -14,6 +14,7 @@ import {
     {
       type: 'list',
       name: 'runnerChoice',
+      message: 'Table:',
       choices: [
         { name: 'Character missions', value: CharacterMissionsRunner.name },
         { name: 'Character Ranks', value: CharacterRanksRunner.name },
