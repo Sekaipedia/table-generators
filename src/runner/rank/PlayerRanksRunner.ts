@@ -1,13 +1,12 @@
 import pluralize from 'pluralize-esm';
+import RanksRunner from './RanksRunner';
 import {
   ApiLevel,
   ApiResourceBoxDetail,
-  ApiPlayerRankRewards,
+  ApiPlayerRankReward,
 } from '../../types/api';
-import ResourceBoxItem from '../../types/ResourceBoxItem';
-import OutputFormat from '../OutputFormat';
-import RankInfo from './RankInfo';
-import RanksRunner from './RanksRunner';
+import ResourceBoxItem from '../../resourceBox/ResourceBoxItem';
+import { OutputFormat, RankInfo } from '../../types/runner';
 
 interface PlayerRankInfo extends RankInfo {
   boxRewards: ResourceBoxItem[];
@@ -40,7 +39,7 @@ export default class PlayerRanksRunner extends RanksRunner<PlayerRankInfo> {
     const rewardsResponse = await fetch(
       'https://raw.githubusercontent.com/Sekai-World/sekai-master-db-diff/main/playerRankRewards.json'
     );
-    const playerRankRewards: ApiPlayerRankRewards[] =
+    const playerRankRewards: ApiPlayerRankReward[] =
       await rewardsResponse.json();
     playerRankRewards.forEach(
       ({ playerRank, resourceBoxId }) =>

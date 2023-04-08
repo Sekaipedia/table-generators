@@ -1,14 +1,13 @@
 import pluralize from 'pluralize-esm';
+import RanksRunner from './RanksRunner';
+import ResourceBoxItem from '../../resourceBox/ResourceBoxItem';
 import {
   ApiCharacterRank,
   ApiCharacterRankAchieveResource,
   ApiLevel,
   ApiResourceBoxDetail,
 } from '../../types/api';
-import ResourceBoxItem from '../../types/ResourceBoxItem';
-import OutputFormat from '../OutputFormat';
-import RankInfo from './RankInfo';
-import RanksRunner from './RanksRunner';
+import { OutputFormat, RankInfo } from '../../types/runner';
 
 interface CharacterRankInfo extends RankInfo {
   materialRewards: ResourceBoxItem[];

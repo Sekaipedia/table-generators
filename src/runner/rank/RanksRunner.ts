@@ -1,4 +1,5 @@
 import { Answers, DistinctQuestion } from 'inquirer';
+import AbstractRunner from '../AbstractRunner';
 import {
   ApiLevel,
   ApiLevelType,
@@ -6,9 +7,7 @@ import {
   ApiResourceBoxDetail,
   ApiResourceBoxPurpose,
 } from '../../types/api';
-import AbstractRunner from '../AbstractRunner';
-import OutputFormat from '../OutputFormat';
-import RankInfo from './RankInfo';
+import { OutputFormat, RankInfo } from '../../types/runner';
 
 export default abstract class RanksRunner<
   T extends RankInfo

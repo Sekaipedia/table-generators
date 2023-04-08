@@ -1,7 +1,7 @@
 import { DistinctQuestion } from 'inquirer';
-import { ApiCharacterMissionV2ParameterGroup } from '../types/api';
 import AbstractRunner from './AbstractRunner';
-import OutputFormat from './OutputFormat';
+import { ApiCharacterMissionV2ParameterGroup } from '../types/api';
+import { OutputFormat } from '../types/runner';
 
 interface MissionInfo {
   requirement: number;

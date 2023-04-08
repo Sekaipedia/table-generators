@@ -5,7 +5,7 @@ import {
   ApiCharacterRankAchieveResource,
 } from './ApiCharacterRank';
 import { ApiLevel, ApiLevelType } from './ApiLevel';
-import { ApiPlayerRankRewards } from './ApiPlayerRankRewards';
+import { ApiPlayerRankReward } from './ApiPlayerRankReward';
 import {
   ApiResourceBox,
   ApiResourceBoxDetail,
@@ -19,7 +19,7 @@ export {
   ApiCharacterRankAchieveResource,
   ApiLevel,
   ApiLevelType,
-  ApiPlayerRankRewards,
+  ApiPlayerRankReward,
   ApiResourceBox,
   ApiResourceBoxDetail,
   ApiResourceBoxPurpose,

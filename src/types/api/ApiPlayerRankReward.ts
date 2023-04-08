@@ -1,4 +1,4 @@
-export interface ApiPlayerRankRewards {
+export interface ApiPlayerRankReward {
   id: number;
   playerRank: number;
   seq: number;

@@ -1,6 +1,6 @@
-import { ApiLevel } from '../types/api';
 import AbstractRunner from './AbstractRunner';
-import OutputFormat from './OutputFormat';
+import { ApiLevel } from '../types/api';
+import { OutputFormat } from '../types/runner';
 
 interface LevelInfo {
   level: number;

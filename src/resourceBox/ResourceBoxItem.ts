@@ -1,7 +1,7 @@
-import { ApiResourceBoxDetail } from './api/ApiResourceBox';
+import { ApiResourceBoxDetail } from '../types/api';
 import LiveBonus from './LiveBonus';
 import Material from './Material';
-import { SkillUpScore } from './SkillUpScore';
+import SkillUpScore from './SkillUpScore';
 
 export default class ResourceBoxItem {
   private item: string;

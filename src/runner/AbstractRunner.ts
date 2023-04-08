@@ -1,8 +1,7 @@
 /// <reference lib="dom" />
 import inquirer, { Answers, DistinctQuestion } from 'inquirer';
-import saveToFile from '../helper/saveToFile';
-import OutputFormat from './OutputFormat';
-import OutputTarget from './OutputTarget';
+import saveToFile from '../helpers/saveToFile';
+import { OutputFormat, OutputTarget } from '../types/runner';
 
 abstract class AbstractRunner {
   protected promptAnswers: Answers;
